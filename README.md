@@ -48,7 +48,7 @@ quality	                Data quality flag
 measurements.station_id → stations.station_id
 
 ## Project Structure
-''' hydrology_pipeline/
+ hydrology_pipeline/
 │
 ├── src/
 │   ├── api.py
@@ -63,7 +63,7 @@ measurements.station_id → stations.station_id
 ├── requirements.txt
 ├── pytest.ini
 └── README.md
-'''
+
 
 ## How To Run
 ### 1. Clone the repository
@@ -105,7 +105,7 @@ Inserted 20 measurements.
 - SELECT * FROM measurements LIMIT 5;
 
 - Example analytical query (join):
-'''
+
 SELECT 
     s.station_name,
     m.parameter,
@@ -115,7 +115,7 @@ FROM measurements m
 JOIN stations s
     ON m.station_id = s.station_id
 LIMIT 5;
-'''
+
 
 ## Running Tests
 - This project includes unit tests.
