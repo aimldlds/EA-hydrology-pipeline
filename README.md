@@ -13,22 +13,28 @@ This project implements a simple ETL data engineering pipeline that:
 - Follows data engineering best practices  
 
 ## Architecture
-- The pipeline follows a standard ETL pattern:
+
+The pipeline follows a standard ETL pattern:
+
+Extract → Transform → Load
 
 ### 1. Extract
-- Connects to the Hydrology API
-- Finds the station GUID dynamically
-- Retrieves 10 most recent readings for two parameters
+
+- Connects to the Hydrology API  
+- Finds the station GUID dynamically  
+- Retrieves 10 most recent readings for two parameters  
 
 ### 2. Transform
-- Cleans parameter names
-- Normalises field naming
-- Prepares data for relational storage
+
+- Cleans parameter names  
+- Normalises field naming  
+- Prepares data for relational storage  
 
 ### 3. Load
-- Creates SQLite database
-- Builds star schema tables
-- Inserts station and measurement records
+
+- Creates SQLite database  
+- Builds star schema tables  
+- Inserts station and measurement records  
 
 ## Database Design (Star Schema)
 
