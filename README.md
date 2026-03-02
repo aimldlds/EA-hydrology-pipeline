@@ -90,7 +90,7 @@ Fetching: ...
 Fetching: ...
 Creating tables...
 Inserted 20 measurements.
-'''
+
 - A file named hydrology.db will be created in the project root.
 
 ## Inspect the Database
@@ -103,19 +103,6 @@ Inserted 20 measurements.
 ### View records:
 - SELECT * FROM stations;
 - SELECT * FROM measurements LIMIT 5;
-
-- Example analytical query (join):
-
-SELECT 
-    s.station_name,
-    m.parameter,
-    m.value,
-    m.timestamp
-FROM measurements m
-JOIN stations s
-    ON m.station_id = s.station_id
-LIMIT 5;
-
 
 ## Running Tests
 - This project includes unit tests.
