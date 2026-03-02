@@ -84,43 +84,55 @@ hydrology_pipeline/
 
 
 ## How To Run
-### 1. Clone the repository
-- git clone <your-repo-url>
-- cd hydrology_pipeline
 
-### 2. Create virtual environment (recommended)
-### Mac / Linux:
-- python3 -m venv .venv
-- source .venv/bin/activate
+### 1. Clone the Repository
 
-### Windows:
-- python -m venv .venv
-- .venv\Scripts\activate
+Run the following commands in your terminal:
 
-### 3. Install dependencies
-- pip install -r requirements.txt
+git clone <your-repo-url>
+cd hydrology_pipeline
 
-### 4. Run the pipeline
-- python main.py
-''' You should see:
+### 2. Create a Virtual Environment (Recommended)
+
+#### Mac / Linux
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+#### Windows
+
+python -m venv .venv
+.venv\Scripts\activate
+
+### 3. Install Dependencies
+
+pip install -r requirements.txt
+
+### 4. Run the Pipeline
+
+python main.py
+
+You should see output similar to:
+
 Using GUID: ...
 Fetching: ...
 Fetching: ...
 Creating tables...
 Inserted 20 measurements.
 
-- A file named hydrology.db will be created in the project root.
+A file named hydrology.db will be created in the project root.
 
-## Inspect the Database
-### Open SQLite:
-- Run: sqlite3 hydrology.db
+### 5. Verify the Database
 
-### List tables:
-- .tables
+sqlite3 hydrology.db
 
-### View records:
-- SELECT * FROM stations;
-- SELECT * FROM measurements LIMIT 5;
+.tables
+
+SELECT * FROM stations;
+SELECT * FROM measurements LIMIT 5;
+
+.exit
+
 
 ## Running Tests
 - This project includes unit tests.
