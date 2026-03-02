@@ -48,7 +48,9 @@ quality	                Data quality flag
 measurements.station_id → stations.station_id
 
 ## Project Structure
- hydrology_pipeline/
+
+```
+hydrology_pipeline/
 │
 ├── src/
 │   ├── api.py
@@ -63,6 +65,7 @@ measurements.station_id → stations.station_id
 ├── requirements.txt
 ├── pytest.ini
 └── README.md
+```
 
 
 ## How To Run
