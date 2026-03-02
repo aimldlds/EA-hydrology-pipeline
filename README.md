@@ -30,22 +30,30 @@ This project implements a simple ETL data engineering pipeline that:
 - Inserts station and measurement records
 
 ## Database Design (Star Schema)
-- The database follows a simple dimensional model:
-- Dimension Table: stations
-Column	                Description
-station_id (PK)	        Unique station identifier
-station_name	        Station label
 
-- Fact Table: measurements
-Column	                Description
-id (PK)	                Measurement ID
-station_id (FK)	        Links to stations
-timestamp	            Measurement time
-parameter	            Parameter name
-value	                Numeric measurement value
-quality	                Data quality flag
-- Foreign key relationship:
-measurements.station_id → stations.station_id
+The database follows a simple dimensional model.
+
+### Dimension Table: `stations`
+
+| Column | Description |
+|--------|------------|
+| station_id (PK) | Unique station identifier |
+| station_name | Station label |
+
+### Fact Table: `measurements`
+
+| Column | Description |
+|--------|------------|
+| id (PK) | Measurement ID |
+| station_id (FK) | Links to stations |
+| timestamp | Measurement time |
+| parameter | Parameter name |
+| value | Numeric measurement value |
+| quality | Data quality flag |
+
+### Foreign Key Relationship
+
+`measurements.station_id → stations.station_id`
 
 ## Project Structure
 
