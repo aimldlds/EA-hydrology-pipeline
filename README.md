@@ -10,7 +10,6 @@ This project implements a simple ETL data engineering pipeline that:
 - Loads it into a file-based SQLite database  
 - Stores the data using a simple star schema design  
 - Is designed to run via a single command  
-- Follows data engineering best practices  
 
 ## Architecture
 
@@ -82,7 +81,6 @@ hydrology_pipeline/
 └── README.md
 ```
 
-
 ## How To Run
 
 ### 1. Clone the Repository
@@ -146,7 +144,6 @@ SELECT * FROM measurements LIMIT 5;
 - Dynamic parameter selection
 - Snake_case naming for SQL consistency
 - Single-command execution
-- SQLite for portability (Windows compatible)
 
 ## Dependencies
 - requests
