@@ -3,13 +3,14 @@
 ## Overview
 
 This project implements a simple ETL data engineering pipeline that:
-- Connects to the UK Hydrological Data Explorer API
-- Retrieves the 10 most recent measurements for two parameters from the station:
-- HIPPER_PARK ROAD BRIDGE_E_202312
-- Transforms the data
-- Loads it into a file-based SQLite database
-- Stores the data using a simple star schema design
-- The project is designed to be run via a single command and follows data engineering best practices.
+
+- Connects to the UK Hydrological Data Explorer API  
+- Retrieves the 10 most recent measurements for two parameters from the station **HIPPER_PARK ROAD BRIDGE_E_202312**  
+- Transforms the data  
+- Loads it into a file-based SQLite database  
+- Stores the data using a simple star schema design  
+- Is designed to run via a single command  
+- Follows data engineering best practices  
 
 ## Architecture
 - The pipeline follows a standard ETL pattern:
