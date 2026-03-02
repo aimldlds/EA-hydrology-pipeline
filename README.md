@@ -71,11 +71,11 @@ measurements.station_id → stations.station_id
 - cd hydrology_pipeline
 
 ### 2. Create virtual environment (recommended)
-- Mac / Linux:
+### Mac / Linux:
 - python3 -m venv .venv
 - source .venv/bin/activate
 
-- Windows:
+### Windows:
 - python -m venv .venv
 - .venv\Scripts\activate
 
@@ -94,13 +94,13 @@ Inserted 20 measurements.
 - A file named hydrology.db will be created in the project root.
 
 ## Inspect the Database
-- Open SQLite:
+### Open SQLite:
 - Run: sqlite3 hydrology.db
 
-- List tables:
+### List tables:
 - .tables
 
-- View records:
+### View records:
 - SELECT * FROM stations;
 - SELECT * FROM measurements LIMIT 5;
 
